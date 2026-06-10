@@ -1,5 +1,6 @@
 import pandas as pd
 from stock_data import company
+from report_generator import generate_report
 
 def analyze_stock(company):
     df = pd.read_csv(f'data/{company}.csv', skiprows=[1])
@@ -9,4 +10,5 @@ def analyze_stock(company):
     "lowest_close" : df["Close"].min(),
     "average_volume" : df["Volume"].mean()}
 
-print(analyze_stock(company))
+results = analyze_stock(company)
+generate_report (company, results)
