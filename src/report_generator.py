@@ -12,5 +12,3 @@ Average Volume: {results['average_volume']:.0f}
 
     with open (f"reports/{company}_summary.txt", "w") as file:
         file.write(report)
-
-    print(f"Report generated: reports/{company}_summary.txt")

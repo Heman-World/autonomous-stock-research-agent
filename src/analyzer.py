@@ -1,5 +1,4 @@
 import pandas as pd
-from stock_data import company
 from report_generator import generate_report
 
 def analyze_stock(company):
@@ -9,6 +8,3 @@ def analyze_stock(company):
     return {"highest_close" : df["Close"].max(),
     "lowest_close" : df["Close"].min(),
     "average_volume" : df["Volume"].mean()}
-
-results = analyze_stock(company)
-generate_report (company, results)
