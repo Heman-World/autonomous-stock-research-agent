@@ -10,6 +10,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def main():
     ticker = DEFAULT_TICKER
     df = get_stock_data(ticker)
+    if df is None:
+        logging.error("Application stopped")
+        return
     logging.info(f"Downloaded data for {ticker}")
     results = analyze_stock(df)
     logging.info(f"Analyzed stock data for {ticker}")
