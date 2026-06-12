@@ -1,7 +1,11 @@
 import yfinance as yf
 import logging
+from config import DATA_FOLDER
+import pandas as pd
 def get_stock_data (company):
     logging.info(f"Downloading data for {company}")
     df = yf.download(company, period="1mo")
-    df.to_csv(f"data/{company}.csv", index=False)
-
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = df.columns.get_level_values(0)
+    df.to_csv(f"{DATA_FOLDER}/{company}.csv", index=False)
+    return df

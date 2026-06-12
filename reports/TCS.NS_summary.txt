@@ -5,5 +5,5 @@ Stock Analysis REPORT
 company: TCS.NS
 
 Highest Close: 2446.90
-Lowest Close: 2139.00
-Average Volume: 5368271
+Lowest Close: 2135.60
+Average Volume: 5370511

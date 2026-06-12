@@ -1,0 +1,3 @@
+DEFAULT_TICKER = "TCS.NS"
+DATA_FOLDER = "data"
+REPORT_FOLDER = "reports"

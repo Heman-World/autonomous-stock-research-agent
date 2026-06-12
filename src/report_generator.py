@@ -1,3 +1,4 @@
+from config import REPORT_FOLDER
 def generate_report(company, results):
     report = f"""
 Stock Analysis REPORT
@@ -10,5 +11,5 @@ Lowest Close: {results['lowest_close']:.2f}
 Average Volume: {results['average_volume']:.0f}
 """
 
-    with open (f"reports/{company}_summary.txt", "w") as file:
+    with open (f"{REPORT_FOLDER}/{company}_summary.txt", "w") as file:
         file.write(report)
