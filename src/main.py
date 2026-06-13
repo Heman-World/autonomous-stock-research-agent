@@ -19,6 +19,18 @@ def main():
     generate_report(ticker, results)
     logging.info(f"Generated report for {ticker}")
 
+def run_analysis(ticker):
+    df = get_stock_data(ticker)
+    if df is None:
+        logging.error("Application stopped")
+        return
+    logging.info(f"Downloaded data for {ticker}")
+    results = analyze_stock(df)
+    logging.info(f"Analyzed stock data for {ticker}")
+    generate_report(ticker, results)
+    logging.info(f"Generated report for {ticker}")
+    return results
+
 if __name__ == "__main__":
     main()
 

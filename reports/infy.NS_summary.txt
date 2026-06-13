@@ -1,0 +1,9 @@
+
+Stock Analysis REPORT
+=====================
+
+company: infy.NS
+
+Highest Close: 1243.88
+Lowest Close: 1071.81
+Average Volume: 15287297

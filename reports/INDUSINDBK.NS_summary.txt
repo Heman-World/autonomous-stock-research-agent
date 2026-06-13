@@ -1,0 +1,9 @@
+
+Stock Analysis REPORT
+=====================
+
+company: INDUSINDBK.NS
+
+Highest Close: 932.30
+Lowest Close: 883.95
+Average Volume: 1757663
