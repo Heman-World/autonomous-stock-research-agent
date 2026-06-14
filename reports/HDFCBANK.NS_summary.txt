@@ -1,0 +1,9 @@
+
+Stock Analysis REPORT
+=====================
+
+company: HDFCBANK.NS
+
+Highest Close: 786.85
+Lowest Close: 738.35
+Average Volume: 37277962
